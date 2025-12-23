@@ -91,3 +91,24 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/nome_do_banco
 spring.datasource.username=usuario
 spring.datasource.password=senha
 spring.jpa.hibernate.ddl-auto=update
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de:
+
+- Praticar desenvolvimento backend com Spring Boot
+- Aplicar autenticação e autorização com JWT
+- Construir uma API REST organizada e segura
+- Servir como projeto de portfólio profissional
+
+---
+
+## 👨‍💻 Autor
+
+Ícaro Lins Gomes
+Desenvolvedor Backend Java | Spring Boot
+
+GitHub: https://github.com/icaroLins
+LinkedIn: https://www.linkedin.com/in/icaro-lins-gomes-16324422b/
