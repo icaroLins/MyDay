@@ -73,10 +73,10 @@ http://localhost:8080/swagger-ui/index.html
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone  https://github.com/icaroLins/MyDay.git
 
 # Entrar no projeto
-cd seu-repositorio
+cd MyDay
 
 # Executar a aplicação
 mvn spring-boot:run
