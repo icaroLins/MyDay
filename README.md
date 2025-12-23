@@ -108,6 +108,7 @@ Este projeto foi desenvolvido com o objetivo de:
 ## 👨‍💻 Autor
 
 Ícaro Lins Gomes
+
 Desenvolvedor Backend Java | Spring Boot
 
 GitHub: https://github.com/icaroLins
