@@ -94,5 +94,16 @@ public class ActivityService {
         return atividade;
     }
 
+    public void deleteActivity(Long userId, Long activityId){
+        Activity atividade = activityRepository.findById(activityId)
+                .orElseThrow(() -> new RuntimeException("ativiadade não encontradaS"));
+        
+        if(!atividade.getUser().getId().equals(userId)){
+            throw new RuntimeException("Você não pode alterar o status dessa atividade!");
+        }
+
+        activityRepository.deleteById(activityId);
+    }
+
 
 }

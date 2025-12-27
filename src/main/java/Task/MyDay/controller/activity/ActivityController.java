@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -106,6 +107,16 @@ public class ActivityController {
         Activity editar = activityService.editActivity(user.getId(), atividadeId, activity);
 
         return ResponseEntity.ok(editar);
+    }
+
+    @DeleteMapping("/delet/{atividadeId}")
+    public ResponseEntity<Void> deleteActivity(Authentication authentication, @PathVariable("atividadeId") Long atividadeId){
+        String email = authentication.getName();
+        User user = userService.searchByEmail(email);
+
+        activityService.deleteActivity(user.getId(), atividadeId);
+
+        return ResponseEntity.noContent().build();
     }
 
 
